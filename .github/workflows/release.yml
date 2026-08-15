@@ -94,7 +94,7 @@ jobs:
       tag: ${{ steps.detect.outputs.tag }}
       version: ${{ steps.detect.outputs.version }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           # The detection diffs the manifest against the parent commit.
           fetch-depth: 2

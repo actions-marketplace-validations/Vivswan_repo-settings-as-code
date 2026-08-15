@@ -42,7 +42,7 @@ jobs:
             echo "proceed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         if: steps.token.outputs.proceed == 'true'
 
       # The bundle the action runs is not committed; build it from this

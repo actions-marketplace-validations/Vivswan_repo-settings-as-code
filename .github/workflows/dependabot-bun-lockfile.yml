@@ -50,7 +50,7 @@ jobs:
       contents: write
       pull-requests: write # the no-retrigger-token PR comment below
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           persist-credentials: false
