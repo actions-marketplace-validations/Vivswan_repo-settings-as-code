@@ -33,7 +33,7 @@ jobs:
       pull-requests: read
       vulnerability-alerts: read
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       # Authoritative release gating, the same action the managed
       # release-please.yml runs: the release PR's own release-health check
       # can be stale by merge time (a tracking or blocker issue opened
@@ -121,7 +121,7 @@ jobs:
     permissions:
       contents: write # read-only in spirit; write is what makes drafts visible to gh
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version-file: .bun-version
